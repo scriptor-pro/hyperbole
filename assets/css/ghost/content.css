@@ -66,6 +66,7 @@
     font-weight: 400;
     font-size: 2rem;
     line-height: 1.6em;
+    max-width: 75ch;
 }
 
 .gh-content > ul,
