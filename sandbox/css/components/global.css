@@ -136,6 +136,12 @@ a[class]:hover {
     transition: 0.2s ease;
 }
 
+/* menu avec gros souligné dotted */
+
+.dottedUnderline { border-bottom: 1px dotted; }
+
+/* fin du menu gros souligné dotted */
+
 h1,
 h2,
 h3,

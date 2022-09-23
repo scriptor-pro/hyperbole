@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+   <title>Naguivation jeudi 22 septembre 2022  15:39:45 UTC+2</title>
+   <style>
+    body { background-color:#f6f6f6;}
+
+* UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   body {
+    font-family:Helvetica, Arial, sans-serif;
+   }
+   a {
+    background-color: transparent;
+    
+   }
+   li {
+    list-style: none;
+   }
+a,li {text-decoration-line: underline;
+  text-decoration-style: dotted;
+ text-decoration-thickness: 45%;
+ }
+
+
+
+/*  div p 	Selects all <p> elements inside <div> elements */
+
+   /* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color:#ffff99;
+    color:#111;
+   }
+   .nav-links a {
+    color: #222222;
+    text-decoration: underline;
+    border-bottom:crimson 0,3rem;
+   }
+   /* LOGO */
+   .logo {
+    font-size: 32px;
+   }
+   /* NAVBAR MENU */
+   .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+   }
+   .menu li:hover {
+    background-color:#ccc;
+    color:#ffff99;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    
+   }
+   .menu li {
+    padding: 5px 14px;
+   }
+   /* DROPDOWN MENU */
+   .services {
+    position: relative; 
+   }
+   .dropdown {
+
+    background-color: rgb(1, 139, 139);
+    padding: 1em 0;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+   }
+   .dropdown li + li {
+    margin-top: 10px;
+   }
+   .dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+   }
+   .dropdown li:hover {
+    background-color: #4c9e9e;
+   }
+   .services:hover .dropdown {
+    display: block;
+   }
+
+   /*  —  burger menu - */
+
+   /*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+ display: none;
+} 
+/*HAMBURGER MENU*/
+.hamburger {
+ display: none;
+ font-size: 24px;
+ user-select: none;
+}
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+.menu { 
+ display:none;
+ position: absolute;
+ background-color:teal;
+ right: 0;
+ left: 0;
+ text-align: center;
+ padding: 16px 0;
+}
+.menu li:hover {
+ display: inline-block;
+ background-color:#4c9e9e;
+ transition: 0.3s ease;
+}
+.menu li + li {
+ margin-top: 12px;
+}
+input[type=checkbox]:checked ~ .menu{
+ display: block;
+}
+.hamburger {
+ display: block;
+}
+.dropdown {
+ left: 50%;
+ top: 30px;
+ transform: translateX(35%);
+}
+.dropdown li:hover {
+ background-color: #4c9e9e;
+}
+
+/* menu Burger */ 
+
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+ display: none;
+} 
+/*HAMBURGER MENU*/
+.hamburger {
+ display: none;
+ font-size: 24px;
+ user-select: none;
+}
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+.menu { 
+ display:none;
+ position: absolute;
+ background-color:teal;
+ right: 0;
+ left: 0;
+ text-align: center;
+ padding: 16px 0;
+}
+.menu li:hover {
+ display: inline-block;
+ background-color:#4c9e9e;
+ transition: 0.3s ease;
+}
+.menu li + li {
+ margin-top: 12px;
+}
+input[type=checkbox]:checked ~ .menu{
+ display: block;
+}
+.hamburger {
+ display: block;
+}
+.dropdown {
+ left: 50%;
+ top: 30px;
+ transform: translateX(35%);
+}
+.dropdown li:hover {
+ background-color: #4c9e9e;
+}
+}
+
+   /*  body-copy */
+
+   p {
+  margin-bottom: 1.5em;
+  margin-top: 0;
+}
+
+section { margin: auto;
+background-color: aquamarine;
+}
+
+.bodycopy {margin:auto;
+background-color: darkorchid;}
+
+main {margin: auto;}
+   </style>
+ </head>
+ <body>
+    
+   <nav class="navbar">
+     <!-- LOGO -->
+     <div class="logo">Docteur Manuscrit lecteur-conseil</div>
+     <!-- NAVIGATION MENU -->
+     <ul class="nav-links">
+       <!-- USING CHECKBOX HACK -->
+       <input type="checkbox" id="checkbox_toggle" />
+       <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+       <!-- NAVIGATION MENUS -->
+       <div class="menu">
+         <li><a href="/">Docteur Manuscrit</a></li>
+         <li><a href="/">Qui je suis</a></li>
+         <li class="services">
+           <a href="/">Outils</a>
+           <!-- DROPDOWN MENU -->
+           <ul class="dropdown">
+             <li><a href="/">Ce que je fais</a></li>
+             <li><a href="/">Ce que je ne fais pas</a></li>
+             <li><a href="/">Dropdown 2</a></li>
+             <li><a href="/">Dropdown 3</a></li>
+             <li><a href="/">Dropdown 4</a></li>
+           </ul>
+         </li>
+         <li><a href="/">Combien ça coûte</a></li>
+         <li><a href="/">Contact</a></li>
+       </div>
+     </ul>
+   </nav>
+   
+    <main>
+        <section class="bodycopy">[section]Orci varius  Etiam ut pulvinar tellus. Sed dictum nulla nisl, tristique feugiat mi condimentum a. Donec pretium urna ornare porttitor mattis. Sed at ex dui. Fusce felis metus, dictum eget condimentum eu, posuere non mi. Duis lobortis at leo sit amet dapibus. Proin eu dapibus ipsum. Proin tristique enim nec nisi mollis eleifend. Donec dictum convallis urna, at pharetra est bibendum a. </section>
+    </main>
+    <footer>[ - Footer - ]
+      </footer>
+ </body>
+</html>
