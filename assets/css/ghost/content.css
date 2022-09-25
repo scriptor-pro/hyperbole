@@ -25,7 +25,7 @@
 }
 
 .kg-width-wide {
-    grid-column: wide-start / wide-end;
+    grid-column: wide-start / wide-end;b
 }
 
 .kg-width-full {
