@@ -26,7 +26,7 @@ body { bottom:orange;}
     background-color: teal;
     color: #fff;
    }
-   .nav-links a {
+   .nav-links a {background-color: transparent;
     color: #fff;
    }
    /* LOGO */
