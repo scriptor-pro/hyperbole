@@ -200,6 +200,7 @@
   [type="reset"],
   [type="submit"] {
     -webkit-appearance: button;
+    appearance:button;
   }
   
   /**
@@ -293,6 +294,7 @@
   [type="search"] {
     -webkit-appearance: textfield; /* 1 */
     outline-offset: -2px; /* 2 */
+    appearance:textfield;
   }
   
   /**
@@ -366,10 +368,12 @@ a {
     color: #002fa7;
   background-color:#ffffa7;
   text-decoration:underline dotted #222222;
+  text-underline-position: under;
+  text-decoration-skip: edge;
 }
 
 a:visited {
-  backgroun-color: ffffa7;
+  background-color: ffffa7;
 }
 
 a:hover {
@@ -397,10 +401,11 @@ blockquote {
   background-position: left;
   padding-left: 2.5rem;
 margin-left: auto;
+border-left: 1rem solid #ff519e;
  }
 
  
-} 
+
 
 /*
 p::first-letter: capitalize {

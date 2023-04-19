@@ -54,11 +54,11 @@
 
         {{!-- Not logged in: Sign up --}}
         <form class="gh-auth-form" data-members-form="signup">
-            <h1 class="gh-auth-title">Signup to {{@site.title}}</h1>
+            <h1 class="gh-auth-title">Recevoir les articles de {{@site.title}}</h1>
             <p>{{@site.description}}</p>
             <div class="gh-auth-box">
                 <input aria-label="Email Address" class="gh-input" data-members-email type="email"
-                    placeholder="youremail@example.com" required="true" autocomplete="false" autofocus />
+                    placeholder="prenom.nom@example.com" required="true" autocomplete="false" autofocus />
                 <button class="gh-button gh-button-primary" type="submit">
                     <span class="gh-button-content">Continue</span>
                     <span class="gh-button-loader">{{> "icons/loader"}}</span>
@@ -67,7 +67,7 @@
             <p><small>Already have an account? <a href="/signin/">Sign in</a></small></p>
             <div class="message-success"><strong>Great!</strong> Check your inbox and click the link to confirm your
                 subscription</div>
-            <div class="message-error">Please enter a valid email address!</div>
+            <div class="message-error">Est-ce que l'adresse que tu as entrée est correcte ?</div>
         </form>
 
         {{/if}}
