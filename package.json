@@ -1,89 +1,97 @@
 {
-    "name": "ghost-starter-theme",
-    "description": "A custom theme for ghost",
-    "demo": "https://starter.ghost.io",
-    "version": "1.0.0",
-    "engines": {
-        "ghost": ">=4.0.0"
-    },
-    "license": "MIT",
-    "screenshots": {
-        "desktop": "assets/screenshot-desktop.jpg"
-    },
-    "scripts": {
-        "dev": "gulp",
-        "zip": "gulp zip",
-        "test": "gscan .",
-        "test:ci": "gscan --fatal --verbose .",
-        "pretest": "gulp build",
-        "preship": "yarn test",
-        "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn version && git push --follow-tags; fi"
-    },
-    "author": {
-        "name": "Ghost Foundation",
-        "email": "hello@ghost.org",
-        "url": "https://ghost.org"
-    },
-    "gpm": {
-        "type": "theme",
-        "categories": [
-            "Minimal",
-            "Magazine"
-        ]
-    },
-    "keywords": [
-        "ghost",
-        "theme",
-        "ghost-theme"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/TryGhost/Starter.git"
-    },
-    "bugs": "https://github.com/TryGhost/Starter/issues",
-    "contributors": "https://github.com/TryGhost/Starter/graphs/contributors",
-    "devDependencies": {
-        "autoprefixer": "10.4.8",
-        "beeper": "2.1.0",
-        "cssnano": "5.1.13",
-        "gscan": "4.34.0",
-        "gulp": "4.0.2",
-        "gulp-livereload": "4.0.2",
-        "gulp-postcss": "9.0.1",
-        "gulp-sourcemaps": "3.0.0",
-        "gulp-uglify": "3.0.2",
-        "gulp-util": "3.0.8",
-        "gulp-watch": "5.0.1",
-        "gulp-zip": "5.1.0",
-        "postcss": "8.4.16",
-        "postcss-color-mod-function": "3.0.3",
-        "postcss-easy-import": "4.0.0"
-    },
-    "browserslist": [
-        "defaults"
-    ],
-    "config": {
-        "card_assets": true,
-        "posts_per_page": 15,
-        "image_sizes": {
-            "xxs": {
-                "width": 30
-            },
-            "xs": {
-                "width": 100
-            },
-            "s": {
-                "width": 300
-            },
-            "m": {
-                "width": 600
-            },
-            "l": {
-                "width": 1200
-            },
-            "xl": {
-                "width": 2000
-            }
-        }
+  "name": "hyperbole",
+  "description": "un thème Ghost responsive et conforme aux critères RGAA",
+  "demo": "https://docteur-manuscrit.com",
+  "version": "0.0.1",
+  "engines": {
+    "ghost": ">=4.0.0"
+  },
+  "license": "MIT",
+  "screenshots": {
+    "desktop": "assets/screenshot-desktop.jpg"
+  },
+  "scripts": {
+    "dev": "gulp",
+    "zip": "gulp zip",
+    "test": "gscan .",
+    "test:ci": "gscan --fatal --verbose .",
+    "pretest": "gulp build",
+    "preship": "yarn test",
+    "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn version && git push --follow-tags; fi"
+  },
+  "author": "Baudouin Van Humbeeck <bvh@scriptor.pro> (https://scriptor.pro)",
+  "author.email": "bvh@scriptor.pro",
+  "gpm": {
+    "type": "theme",
+    "categories": [
+      "Minimal",
+      "Magazine",
+      "Blog",
+      "Newsletter"
+    ]
+  },
+  "keywords": [
+    "ghost",
+    "theme",
+    "ghost-theme",
+    "responsive",
+    "RGAA",
+    "A11Y" ]
+  ,"repository": {
+    "type": "git",
+    "url": "git+https://github.com/scriptor-pro/hyperbole.git"
+  },
+  "bugs": {
+    "url": "https://github.com/scriptor-pro/hyperbole/issues"
+  ,  "contributors": {
+      "name": "baudouin",
+      "email": "bvh@scriptor.pro",
+      "url": "https://scriptor.pro/"
     }
+  ,"devDependencies": {
+    "autoprefixer": "10.4.8",
+    "beeper": "2.1.0",
+    "cssnano": "5.1.13",
+    "gscan": "4.34.0",
+    "gulp": "4.0.2",
+    "gulp-livereload": "4.0.2",
+    "gulp-postcss": "9.0.1",
+    "gulp-sourcemaps": "3.0.0",
+    "gulp-uglify": "3.0.2",
+    "gulp-util": "3.0.8",
+    "gulp-watch": "5.0.1",
+    "gulp-zip": "5.1.0",
+    "postcss": "8.4.16",
+    "postcss-color-mod-function": "3.0.3",
+    "postcss-easy-import": "4.0.0"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "config": {
+    "card_assets": true,
+    "posts_per_page": 15,
+    "image_sizes": {
+      "xxs": {
+        "width": 30
+      },
+      "xs": {
+        "width": 100
+      },
+      "s": {
+        "width": 300
+      },
+      "m": {
+        "width": 600
+      },
+      "l": {
+        "width": 1200
+      },
+      "xl": {
+        "width": 2000
+      }
+    }
+  },
+  "homepage": "https://github.com/TryGhost/Starter#readme",
+  "main": "gulpfile.js"
 }
