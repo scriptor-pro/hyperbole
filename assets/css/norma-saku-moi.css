@@ -1,0 +1,1051 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+ html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+  
+  /* Sections
+     ========================================================================== */
+  
+  /**
+   * Remove the margin in all browsers.
+   */
+  
+  body {
+    margin: 0;
+  }
+  
+  /**
+   * Render the `main` element consistently in IE.
+   */
+  
+  main {
+    display: block;
+  }
+  
+  /**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+  
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+  
+  /* Grouping content
+     ========================================================================== */
+  
+  /**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+  
+  hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /* Text-level semantics
+     ========================================================================== */
+  
+  /**
+   * Remove the gray background on active links in IE 10.
+   */
+  
+  a {
+    background-color: transparent;
+  }
+  
+  /**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+  
+  abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+  }
+  
+  /**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+  
+  b,
+  strong {
+    font-weight: bolder;
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  code,
+  kbd,
+  samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /**
+   * Add the correct font size in all browsers.
+   */
+  
+  small {
+    font-size: 80%;
+  }
+  
+  /**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+  
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  
+  sub {
+    bottom: -0.25em;
+  }
+  
+  sup {
+    top: -0.5em;
+  }
+  
+  /* Embedded content
+     ========================================================================== */
+  
+  /**
+   * Remove the border on images inside links in IE 10.
+   */
+  
+  img {
+    border-style: none;
+  }
+  
+  /* Forms
+     ========================================================================== */
+  
+  /**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+  
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+  }
+  
+  /**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+  
+  button,
+  input { /* 1 */
+    overflow: visible;
+  }
+  
+  /**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+  
+  button,
+  select { /* 1 */
+    text-transform: none;
+  }
+  
+  /**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+  
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
+  
+  /**
+   * Remove the inner border and padding in Firefox.
+   */
+  
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+  
+  /**
+   * Restore the focus styles unset by the previous rule.
+   */
+  
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+  
+  /**
+   * Correct the padding in Firefox.
+   */
+  
+  fieldset {
+    padding: 0.35em 0.75em 0.625em;
+  }
+  
+  /**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+  
+  legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+  }
+  
+  /**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+  
+  progress {
+    vertical-align: baseline;
+  }
+  
+  /**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+  
+  textarea {
+    overflow: auto;
+  }
+  
+  /**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+  
+  [type="checkbox"],
+  [type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+  }
+  
+  /**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+  
+  [type="number"]::-webkit-inner-spin-button,
+  [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+  }
+  
+  /**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+  
+  [type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+  }
+  
+  /**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+  
+  [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  
+  /**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+  
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+  }
+  
+  /* Interactive
+     ========================================================================== */
+  
+  /*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+  
+  details {
+    display: block;
+  }
+  
+  /*
+   * Add the correct display in all browsers.
+   */
+  
+  summary {
+    display: list-item;
+  }
+  
+  /* Misc
+     ========================================================================== */
+  
+  /**
+   * Add the correct display in IE 10+.
+   */
+  
+  template {
+    display: none;
+  }
+  
+  /**
+   * Add the correct display in IE 10.
+   */
+  
+  [hidden] {
+    display: none;
+  }
+  
+  
+
+/*! Sakura.css v1.0.5 | MIT License | azusa-komono.net */
+
+/* ... contenu de sakura.css ... */
+
+/*!
+ * Sakura.js 1.1.1
+ * Vanilla JS version of jQuery-Sakura: Make it rain sakura petals.
+ * https://github.com/jhammann/sakura
+ *
+ * Copyright 2019-2019 Jeroen Hammann
+ *
+ * Released under the MIT License
+ *
+ * Released on: September 4, 2019
+ */
+ @-webkit-keyframes fall {
+    0% {
+      opacity: 0.9;
+      top: 0; }
+    100% {
+      opacity: 0.2;
+      top: 100%; } }
+  
+  @keyframes fall {
+    0% {
+      opacity: 0.9;
+      top: 0; }
+    100% {
+      opacity: 0.2;
+      top: 100%; } }
+  
+  @-webkit-keyframes blow-soft-left {
+    0% {
+      margin-left: 0; }
+    100% {
+      margin-left: -50%; } }
+  
+  @keyframes blow-soft-left {
+    0% {
+      margin-left: 0; }
+    100% {
+      margin-left: -50%; } }
+  
+  @-webkit-keyframes blow-medium-left {
+    0% {
+      margin-left: 0; }
+    100% {
+      margin-left: -100%; } }
+  
+  @keyframes blow-medium-left {
+    0% {
+      margin-left: 0; }
+    100% {
+      margin-left: -100%; } }
+  
+  @-webkit-keyframes blow-soft-right {
+    0% {
+      margin-left: 0; }
+    100% {
+      margin-left: 50%; } }
+  
+  @keyframes blow-soft-right {
+    0% {
+      margin-left: 0; }
+    100% {
+      margin-left: 50%; } }
+  
+  @-webkit-keyframes blow-medium-right {
+    0% {
+      margin-left: 0; }
+    100% {
+      margin-left: 100%; } }
+  
+  @keyframes blow-medium-right {
+    0% {
+      margin-left: 0; }
+    100% {
+      margin-left: 100%; } }
+  
+  @-webkit-keyframes sway-0 {
+    0% {
+      -webkit-transform: rotate(-5deg);
+      transform: rotate(-5deg); }
+    40% {
+      -webkit-transform: rotate(28deg);
+      transform: rotate(28deg); }
+    100% {
+      -webkit-transform: rotate(3deg);
+      transform: rotate(3deg); } }
+  
+  @keyframes sway-0 {
+    0% {
+      -webkit-transform: rotate(-5deg);
+      transform: rotate(-5deg); }
+    40% {
+      -webkit-transform: rotate(28deg);
+      transform: rotate(28deg); }
+    100% {
+      -webkit-transform: rotate(3deg);
+      transform: rotate(3deg); } }
+  
+  @-webkit-keyframes sway-1 {
+    0% {
+      -webkit-transform: rotate(10deg);
+      transform: rotate(10deg); }
+    40% {
+      -webkit-transform: rotate(43deg);
+      transform: rotate(43deg); }
+    100% {
+      -webkit-transform: rotate(15deg);
+      transform: rotate(15deg); } }
+  
+  @keyframes sway-1 {
+    0% {
+      -webkit-transform: rotate(10deg);
+      transform: rotate(10deg); }
+    40% {
+      -webkit-transform: rotate(43deg);
+      transform: rotate(43deg); }
+    100% {
+      -webkit-transform: rotate(15deg);
+      transform: rotate(15deg); } }
+  
+  @-webkit-keyframes sway-2 {
+    0% {
+      -webkit-transform: rotate(15deg);
+      transform: rotate(15deg); }
+    40% {
+      -webkit-transform: rotate(56deg);
+      transform: rotate(56deg); }
+    100% {
+      -webkit-transform: rotate(22deg);
+      transform: rotate(22deg); } }
+  
+  @keyframes sway-2 {
+    0% {
+      -webkit-transform: rotate(15deg);
+      transform: rotate(15deg); }
+    40% {
+      -webkit-transform: rotate(56deg);
+      transform: rotate(56deg); }
+    100% {
+      -webkit-transform: rotate(22deg);
+      transform: rotate(22deg); } }
+  
+  @-webkit-keyframes sway-3 {
+    0% {
+      -webkit-transform: rotate(25deg);
+      transform: rotate(25deg); }
+    40% {
+      -webkit-transform: rotate(74deg);
+      transform: rotate(74deg); }
+    100% {
+      -webkit-transform: rotate(37deg);
+      transform: rotate(37deg); } }
+  
+  @keyframes sway-3 {
+    0% {
+      -webkit-transform: rotate(25deg);
+      transform: rotate(25deg); }
+    40% {
+      -webkit-transform: rotate(74deg);
+      transform: rotate(74deg); }
+    100% {
+      -webkit-transform: rotate(37deg);
+      transform: rotate(37deg); } }
+  
+  @-webkit-keyframes sway-4 {
+    0% {
+      -webkit-transform: rotate(40deg);
+      transform: rotate(40deg); }
+    40% {
+      -webkit-transform: rotate(68deg);
+      transform: rotate(68deg); }
+    100% {
+      -webkit-transform: rotate(25deg);
+      transform: rotate(25deg); } }
+  
+  @keyframes sway-4 {
+    0% {
+      -webkit-transform: rotate(40deg);
+      transform: rotate(40deg); }
+    40% {
+      -webkit-transform: rotate(68deg);
+      transform: rotate(68deg); }
+    100% {
+      -webkit-transform: rotate(25deg);
+      transform: rotate(25deg); } }
+  
+  @-webkit-keyframes sway-5 {
+    0% {
+      -webkit-transform: rotate(50deg);
+      transform: rotate(50deg); }
+    40% {
+      -webkit-transform: rotate(78deg);
+      transform: rotate(78deg); }
+    100% {
+      -webkit-transform: rotate(40deg);
+      transform: rotate(40deg); } }
+  
+  @keyframes sway-5 {
+    0% {
+      -webkit-transform: rotate(50deg);
+      transform: rotate(50deg); }
+    40% {
+      -webkit-transform: rotate(78deg);
+      transform: rotate(78deg); }
+    100% {
+      -webkit-transform: rotate(40deg);
+      transform: rotate(40deg); } }
+  
+  @-webkit-keyframes sway-6 {
+    0% {
+      -webkit-transform: rotate(65deg);
+      transform: rotate(65deg); }
+    40% {
+      -webkit-transform: rotate(92deg);
+      transform: rotate(92deg); }
+    100% {
+      -webkit-transform: rotate(58deg);
+      transform: rotate(58deg); } }
+  
+  @keyframes sway-6 {
+    0% {
+      -webkit-transform: rotate(65deg);
+      transform: rotate(65deg); }
+    40% {
+      -webkit-transform: rotate(92deg);
+      transform: rotate(92deg); }
+    100% {
+      -webkit-transform: rotate(58deg);
+      transform: rotate(58deg); } }
+  
+  @-webkit-keyframes sway-7 {
+    0% {
+      -webkit-transform: rotate(72deg);
+      transform: rotate(72deg); }
+    40% {
+      -webkit-transform: rotate(118deg);
+      transform: rotate(118deg); }
+    100% {
+      -webkit-transform: rotate(68deg);
+      transform: rotate(68deg); } }
+  
+  @keyframes sway-7 {
+    0% {
+      -webkit-transform: rotate(72deg);
+      transform: rotate(72deg); }
+    40% {
+      -webkit-transform: rotate(118deg);
+      transform: rotate(118deg); }
+    100% {
+      -webkit-transform: rotate(68deg);
+      transform: rotate(68deg); } }
+  
+  @-webkit-keyframes sway-8 {
+    0% {
+      -webkit-transform: rotate(94deg);
+      transform: rotate(94deg); }
+    40% {
+      -webkit-transform: rotate(136deg);
+      transform: rotate(136deg); }
+    100% {
+      -webkit-transform: rotate(82deg);
+      transform: rotate(82deg); } }
+  
+  @keyframes sway-8 {
+    0% {
+      -webkit-transform: rotate(94deg);
+      transform: rotate(94deg); }
+    40% {
+      -webkit-transform: rotate(136deg);
+      transform: rotate(136deg); }
+    100% {
+      -webkit-transform: rotate(82deg);
+      transform: rotate(82deg); } }
+  
+  .sakura {
+    pointer-events: none;
+    position: absolute; }
+  
+  
+
+
+/* Styles personnalisés */
+
+/* Accessibilité */
+
+/* Accessibilité */
+  
+  /* Assurez-vous que les liens sont bien visibles et distinguables du texte environnant. */
+  a {
+    color: #0074d9;
+    text-decoration: underline;
+  }
+  
+  a:hover,
+  a:focus {
+    color: #005cbf;
+    text-decoration: none;
+  }
+  
+  /* Fournissez une indication visuelle claire du focus pour les utilisateurs qui naviguent au clavier. */
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+  
+  :focus-visible {
+    outline: 2px solid #0074d9;
+  }
+  
+  /* Assurez-vous que le texte est suffisamment contrasté avec le fond. */
+  body {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Assurez-vous que les textes sont suffisamment gros et espacés pour une lecture facile. */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  h4 {
+    font-size: 1.25rem;
+  }
+  
+  h5 {
+    font-size: 1rem;
+  }
+  
+  h6 {
+    font-size: 0.875rem;
+  }
+  
+  p {
+    margin: 0 0 1em;
+  }
+
+  /* Navigation */
+  
+/* Navigation */
+.site-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 30px;
+  }
+  
+  .site-nav-logo a {
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .site-nav-toggle {
+    display: none;
+  }
+  
+  .site-nav-toggle-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url('https://cdn.jsdelivr.net/gh/thoughtbot/refills/icons/hamburger.svg') center center no-repeat;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .site-nav {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 10px 15px;
+    }
+  
+    .site-nav-logo a {
+      margin-right: auto;
+    }
+  
+    .site-nav-toggle {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .site-nav-links {
+      display: none;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  
+    .site-nav-links li {
+      margin: 0;
+      padding: 0;
+    }
+  
+    .site-nav-link {
+      display: block;
+      padding: 10px 0;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+  }
+  
+
+  /* Assurez-vous que les éléments interactifs tels que les boutons sont facilement utilisables au clavier. */
+  button,
+  input[type="button"],
+  input[type="submit"] {
+    cursor: pointer;
+  }
+  
+  /* Assurez-vous que les éléments interactifs sont clairement visibles. */
+  button,
+  input[type="button"],
+  input[type="submit"],
+  select,
+  textarea {
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5em 1em;
+  }
+  
+  button:hover,
+  input[type="button"]:hover,
+  input[type="submit"]:hover,
+  select:hover,
+  textarea:hover,
+  button:focus,
+  input[type="button"]:focus,
+  input[type="submit"]:focus,
+  select:focus,
+  textarea:focus {
+    background-color: #005cbf;
+    outline: none;
+  }
+  
+  /* Assurez-vous que les tableaux sont lisibles pour tous les utilisateurs. */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  th,
+  td {
+    padding: 0.5em;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    font-weight: bold;
+    background-color: #f5f5f5;
+  }
+  
+  /* Assurez-vous que les images sont facilement compréhensibles pour tous les utilisateurs. */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: none;
+    margin: 0;
+  }
+  
+  /* Assurez-vous
+  
+  /* Assurez-vous que les formulaires sont accessibles et faciles à utiliser. */
+label {
+    display: block;
+    margin-bottom: 0.5em;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="tel"],
+  input[type="password"],
+  textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="url"]:focus,
+  input[type="tel"]:focus,
+  input[type="password"]:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #0074d9;
+    box-shadow: 0 0 5px #0074d9;
+  }
+  
+  /* Assurez-vous que les listes sont accessibles et faciles à naviguer. */
+  ul,
+  ol {
+    margin: 0 0 1em;
+    padding: 0;
+    list-style: none;
+  }
+  
+  li {
+    margin-bottom: 0.5em;
+  }
+  
+  /* Assurez-vous que les citations sont clairement identifiées. */
+  blockquote {
+    margin: 0 0 1em;
+    padding: 0.5em;
+    border-left: 4px solid #0074d9;
+    font-style: italic;
+  }
+  
+  /* Assurez-vous que les codes sont facilement lisibles. */
+  pre {
+    margin: 0 0 1em;
+    padding: 1em;
+    overflow: auto;
+    font-size: 0.875rem;
+    background-color: #f5f5f5;
+    border-radius: 3px;
+  }
+  
+  code {
+    font-family: Consolas, monospace;
+    font-size: 0.875rem;
+  }
+  
+  /* Assurez-vous que les éléments désactivés sont clairement identifiés. */
+  fieldset[disabled] {
+    opacity: 0.5;
+  }
+  
+  /* Assurez-vous que les messages d'erreur sont clairement identifiés et accessibles. */
+  .error {
+    color: #d00;
+  }
+  
+  /* Assurez-vous que les styles sont adaptatifs et que le contenu est facilement lisibles sur différents écrans. */
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    h3 {
+      font-size: 1.25rem;
+    }
+  
+    h4,
+    h5,
+    h6 {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Assurez-vous que les styles ne sont pas dépendants de la couleur pour transmettre des informations. */
+  @media screen and (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+/* Assurez-vous que les liens sont facilement identifiés et accessibles. */
+a {
+    color: #0074d9;
+    text-decoration: none;
+  }
+  
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+  }
+  
+  /* Assurez-vous que les boutons sont clairement identifiés et accessibles. */
+  button,
+  input[type="submit"],
+  input[type="reset"] {
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    background-color: #0074d9;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover,
+  button:focus,
+  input[type="submit"]:hover,
+  input[type="submit"]:focus,
+  input[type="reset"]:hover,
+  input[type="reset"]:focus {
+    background-color: #005ea2;
+  }
+  
+  /* Assurez-vous que les images ont des alternatives accessibles. */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Assurez-vous que les tableaux sont accessibles et faciles à naviguer. */
+  table {
+    margin: 0 0 1em;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th,
+  td {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+  }
+  
+  th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  /* Assurez-vous que les éléments interactifs sont facilement accessibles au clavier. */
+  a,
+  button,
+  input[type="button"],
+  input[type="checkbox"],
+  input[type="radio"],
+  input[type="range"],
+  input[type="file"],
+  input[type="submit"],
+  input[type="reset"],
+  select,
+  textarea,
+  [tabindex] {
+    outline: none;
+  }
+  
+  a:hover,
+  a:focus,
+  button:hover,
+  button:focus,
+  input[type="button"]:hover,
+  input[type="button"]:focus,
+  input[type="checkbox"]:hover,
+  input[type="checkbox"]:focus,
+  input[type="radio"]:hover,
+  input[type="radio"]:focus,
+  input[type="range"]:hover,
+  input[type="range"]:focus,
+  input[type="file"]:hover,
+  input[type="file"]:focus,
+  input[type="submit"]:hover,
+  input[type="submit"]:focus,
+  input[type="reset"]:hover,
+  input[type="reset"]:focus,
+  select:hover,
+  select:focus,
+  textarea:hover,
+  textarea:focus {
+    box-shadow: 0 0 0 2px #0074d9;
+  }
+    
+
+/* ... vos styles personnalisés ici ... */
