@@ -1,0 +1,428 @@
+/* Réinitialisation des styles */
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  /* Accessibilité */
+  
+  /* Assurez-vous que les liens sont bien visibles et distinguables du texte environnant. */
+  a {
+    color: #0074d9;
+    text-decoration: underline;
+  }
+  
+  a:hover,
+  a:focus {
+    color: #005cbf;
+    text-decoration: none;
+  }
+  
+  /* Fournissez une indication visuelle claire du focus pour les utilisateurs qui naviguent au clavier. */
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+  
+  :focus-visible {
+    outline: 2px solid #0074d9;
+  }
+  
+  /* Assurez-vous que le texte est suffisamment contrasté avec le fond. */
+  body {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Assurez-vous que les textes sont suffisamment gros et espacés pour une lecture facile. */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  h4 {
+    font-size: 1.25rem;
+  }
+  
+  h5 {
+    font-size: 1rem;
+  }
+  
+  h6 {
+    font-size: 0.875rem;
+  }
+  
+  p {
+    margin: 0 0 1em;
+  }
+
+  /* Navigation */
+  
+/* Navigation */
+.site-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 30px;
+  }
+  
+  .site-nav-logo a {
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .site-nav-toggle {
+    display: none;
+  }
+  
+  .site-nav-toggle-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url('https://cdn.jsdelivr.net/gh/thoughtbot/refills/icons/hamburger.svg') center center no-repeat;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .site-nav {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 10px 15px;
+    }
+  
+    .site-nav-logo a {
+      margin-right: auto;
+    }
+  
+    .site-nav-toggle {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .site-nav-links {
+      display: none;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  
+    .site-nav-links li {
+      margin: 0;
+      padding: 0;
+    }
+  
+    .site-nav-link {
+      display: block;
+      padding: 10px 0;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+  }
+  
+
+  /* Assurez-vous que les éléments interactifs tels que les boutons sont facilement utilisables au clavier. */
+  button,
+  input[type="button"],
+  input[type="submit"] {
+    cursor: pointer;
+  }
+  
+  /* Assurez-vous que les éléments interactifs sont clairement visibles. */
+  button,
+  input[type="button"],
+  input[type="submit"],
+  select,
+  textarea {
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5em 1em;
+  }
+  
+  button:hover,
+  input[type="button"]:hover,
+  input[type="submit"]:hover,
+  select:hover,
+  textarea:hover,
+  button:focus,
+  input[type="button"]:focus,
+  input[type="submit"]:focus,
+  select:focus,
+  textarea:focus {
+    background-color: #005cbf;
+    outline: none;
+  }
+  
+  /* Assurez-vous que les tableaux sont lisibles pour tous les utilisateurs. */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  th,
+  td {
+    padding: 0.5em;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    font-weight: bold;
+    background-color: #f5f5f5;
+  }
+  
+  /* Assurez-vous que les images sont facilement compréhensibles pour tous les utilisateurs. */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: none;
+    margin: 0;
+  }
+  
+  /* Assurez-vous
+  
+  /* Assurez-vous que les formulaires sont accessibles et faciles à utiliser. */
+label {
+    display: block;
+    margin-bottom: 0.5em;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="tel"],
+  input[type="password"],
+  textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="url"]:focus,
+  input[type="tel"]:focus,
+  input[type="password"]:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #0074d9;
+    box-shadow: 0 0 5px #0074d9;
+  }
+  
+  /* Assurez-vous que les listes sont accessibles et faciles à naviguer. */
+  ul,
+  ol {
+    margin: 0 0 1em;
+    padding: 0;
+    list-style: none;
+  }
+  
+  li {
+    margin-bottom: 0.5em;
+  }
+  
+  /* Assurez-vous que les citations sont clairement identifiées. */
+  blockquote {
+    margin: 0 0 1em;
+    padding: 0.5em;
+    border-left: 4px solid #0074d9;
+    font-style: italic;
+  }
+  
+  /* Assurez-vous que les codes sont facilement lisibles. */
+  pre {
+    margin: 0 0 1em;
+    padding: 1em;
+    overflow: auto;
+    font-size: 0.875rem;
+    background-color: #f5f5f5;
+    border-radius: 3px;
+  }
+  
+  code {
+    font-family: Consolas, monospace;
+    font-size: 0.875rem;
+  }
+  
+  /* Assurez-vous que les éléments désactivés sont clairement identifiés. */
+  fieldset[disabled] {
+    opacity: 0.5;
+  }
+  
+  /* Assurez-vous que les messages d'erreur sont clairement identifiés et accessibles. */
+  .error {
+    color: #d00;
+  }
+  
+  /* Assurez-vous que les styles sont adaptatifs et que le contenu est facilement lisibles sur différents écrans. */
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    h3 {
+      font-size: 1.25rem;
+    }
+  
+    h4,
+    h5,
+    h6 {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Assurez-vous que les styles ne sont pas dépendants de la couleur pour transmettre des informations. */
+  @media screen and (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+/* Assurez-vous que les liens sont facilement identifiés et accessibles. */
+a {
+    color: #0074d9;
+    text-decoration: none;
+  }
+  
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+  }
+  
+  /* Assurez-vous que les boutons sont clairement identifiés et accessibles. */
+  button,
+  input[type="submit"],
+  input[type="reset"] {
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    background-color: #0074d9;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover,
+  button:focus,
+  input[type="submit"]:hover,
+  input[type="submit"]:focus,
+  input[type="reset"]:hover,
+  input[type="reset"]:focus {
+    background-color: #005ea2;
+  }
+  
+  /* Assurez-vous que les images ont des alternatives accessibles. */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Assurez-vous que les tableaux sont accessibles et faciles à naviguer. */
+  table {
+    margin: 0 0 1em;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th,
+  td {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+  }
+  
+  th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  /* Assurez-vous que les éléments interactifs sont facilement accessibles au clavier. */
+  a,
+  button,
+  input[type="button"],
+  input[type="checkbox"],
+  input[type="radio"],
+  input[type="range"],
+  input[type="file"],
+  input[type="submit"],
+  input[type="reset"],
+  select,
+  textarea,
+  [tabindex] {
+    outline: none;
+  }
+  
+  a:hover,
+  a:focus,
+  button:hover,
+  button:focus,
+  input[type="button"]:hover,
+  input[type="button"]:focus,
+  input[type="checkbox"]:hover,
+  input[type="checkbox"]:focus,
+  input[type="radio"]:hover,
+  input[type="radio"]:focus,
+  input[type="range"]:hover,
+  input[type="range"]:focus,
+  input[type="file"]:hover,
+  input[type="file"]:focus,
+  input[type="submit"]:hover,
+  input[type="submit"]:focus,
+  input[type="reset"]:hover,
+  input[type="reset"]:focus,
+  select:hover,
+  select:focus,
+  textarea:hover,
+  textarea:focus {
+    box-shadow: 0 0 0 2px #0074d9;
+  }
+    
